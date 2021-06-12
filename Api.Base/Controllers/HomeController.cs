@@ -10,7 +10,7 @@ namespace Api.Base.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Api Base";
 
             return View();
         }
