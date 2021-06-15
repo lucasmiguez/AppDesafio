@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Business\RequestBusiness.cs" />
     <Compile Include="Models\AgrupamentoEnum.cs" />
+    <Compile Include="Models\AgrupamentoModel.cs" />
     <Compile Include="Models\MassaDadosModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

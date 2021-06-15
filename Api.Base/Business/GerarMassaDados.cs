@@ -63,12 +63,12 @@ namespace Api.Base.Business
                         MassaDadosModel massa = new MassaDadosModel
                         {
                             id = i,
-                            conta = new Random(GetRandomSeed()).Next(1,9999),
+                            conta =  int.Parse(string.Concat("123", (new Random(GetRandomSeed()).Next(0,9)).ToString())),
                             datetime = DateTime.Now.AddDays(new Random().Next(99)).ToString("yyyy-MM-dd HH:mm:ss"),
                             preco = new Random(GetRandomSeed()).Next(1,9999),
                             quantidade = new Random(GetRandomSeed()).Next(1,999),
                             tipoOperacao = _tipoOperacao,
-                            ativo = string.Concat(RandomString(3), new Random(GetRandomSeed()).Next(0,9).ToString())
+                            ativo = string.Concat("PETR", new Random(GetRandomSeed()).Next(0,9).ToString())
                         };
                         listMassa.Add(massa);
                 }

@@ -30,13 +30,13 @@ namespace Api.TratamentoDados.Controllers
         }
 
         [AcceptVerbs("GET")]
-        [Route("Agrupamento")]
-        public HttpResponseMessage Get(AgrupamentoEnum p_agrupamento)
+        [Route("Agrupamento/{id}")]
+        public HttpResponseMessage Get(AgrupamentoEnum id)
         {
             try
             {
                 TratamentoDadosBusiness _tratamentoDados = new TratamentoDadosBusiness();
-                var retorno = _tratamentoDados.Agrupamento(p_agrupamento);
+                var retorno = _tratamentoDados.Agrupamento(id);
                 return Request.CreateResponse(HttpStatusCode.OK, retorno);
             }
             catch (Exception ex)
