@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Api.Base.Models
+namespace CommonLibrary.Models
+
 {
     public class MassaDadosModel
     {
