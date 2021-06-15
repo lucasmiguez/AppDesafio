@@ -1,4 +1,5 @@
-﻿using CommonLibrary.Business;
+﻿using Api.TratamentoDados.Models;
+using CommonLibrary.Business;
 using CommonLibrary.Models;
 using Newtonsoft.Json;
 using System;
@@ -29,9 +30,62 @@ namespace Api.TratamentoDados.Business
             }
         }
 
+        public List<AgrupamentoModel> Agrupamento(AgrupamentoEnum _tipo)
+        {
+            try 
+            {
+                
+
+                var listFull = this.GetListMassaDadosModelFull();
+                List<AgrupamentoModel> result;
+
+                switch ((int)_tipo)
+                {
+                    case 1: // Conta
+                        result = listFull.GroupBy(l => l.conta)
+                        .Select(cl => new AgrupamentoModel
+                        {
+                            descricao = cl.First().conta.ToString(),
+                            precomedio = cl.Sum(c => c.quantidade) == 0 ? 0 : cl.Sum(c => c.quantidade * c.preco) / cl.Sum(c => c.quantidade),
+                            quantidade = cl.Sum(c => c.quantidade)
+                        }).ToList();
+                        break;
+                    case 2: // Ativo
+                        result = listFull.GroupBy(l => l.ativo )
+                       .Select(cl => new AgrupamentoModel
+                       {
+                           descricao = cl.First().conta.ToString(),
+                           precomedio = cl.Sum(c => c.quantidade) == 0 ? 0 : cl.Sum(c => c.quantidade * c.preco) / cl.Sum(c => c.quantidade),
+                           quantidade = cl.Sum(c => c.quantidade)
+                       }).ToList();
+                        break;
+                    default:
+                        result = listFull.GroupBy(l => l.tipoOperacao)
+                       .Select(cl => new AgrupamentoModel
+                       {
+                           descricao = cl.First().conta.ToString(),
+                           precomedio = cl.Sum(c => c.quantidade) == 0 ? 0 : cl.Sum(c => c.quantidade * c.preco) / cl.Sum(c => c.quantidade),
+                           quantidade = cl.Sum(c => c.quantidade)
+                       }).ToList();
+                        break;
+                }
+
+                
+                
+                return result;
+
+            }
+            catch (Exception ex) 
+            {
+                throw ex;
+            }
+        }
+
+
+
     }
 
-    
+
 
 
 }

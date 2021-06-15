@@ -29,10 +29,20 @@ namespace Api.TratamentoDados.Controllers
             }
         }
 
-        // GET api/values/5
-        public string Get(int id)
+        [AcceptVerbs("GET")]
+        [Route("Agrupamento")]
+        public HttpResponseMessage Get(AgrupamentoEnum p_agrupamento)
         {
-            return "value";
+            try
+            {
+                TratamentoDadosBusiness _tratamentoDados = new TratamentoDadosBusiness();
+                var retorno = _tratamentoDados.Agrupamento(p_agrupamento);
+                return Request.CreateResponse(HttpStatusCode.OK, retorno);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
         }
 
         // POST api/values
