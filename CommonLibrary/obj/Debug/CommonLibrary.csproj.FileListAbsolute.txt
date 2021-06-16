@@ -1,0 +1,6 @@
+D:\desenvolvimento\AppTesteGFT\AppTeste\CommonLibrary\bin\Debug\CommonLibrary.dll
+D:\desenvolvimento\AppTesteGFT\AppTeste\CommonLibrary\bin\Debug\CommonLibrary.pdb
+D:\desenvolvimento\AppTesteGFT\AppTeste\CommonLibrary\obj\Debug\CommonLibrary.csproj.CoreCompileInputs.cache
+D:\desenvolvimento\AppTesteGFT\AppTeste\CommonLibrary\obj\Debug\CommonLibrary.dll
+D:\desenvolvimento\AppTesteGFT\AppTeste\CommonLibrary\obj\Debug\CommonLibrary.pdb
+D:\desenvolvimento\AppTesteGFT\AppTeste\CommonLibrary\obj\Debug\CommonLibrary.csprojAssemblyReference.cache

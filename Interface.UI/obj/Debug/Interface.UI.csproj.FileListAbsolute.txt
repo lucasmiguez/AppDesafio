@@ -1,0 +1,15 @@
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\bin\Debug\Interface.UI.exe.config
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\bin\Debug\Interface.UI.exe
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\bin\Debug\Interface.UI.pdb
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\bin\Debug\CommonLibrary.dll
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\bin\Debug\Newtonsoft.Json.dll
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\bin\Debug\CommonLibrary.pdb
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\bin\Debug\Newtonsoft.Json.xml
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\obj\Debug\Interface.UI.csprojAssemblyReference.cache
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\obj\Debug\Interface.UI.Form1.resources
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\obj\Debug\Interface.UI.Properties.Resources.resources
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\obj\Debug\Interface.UI.csproj.GenerateResource.cache
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\obj\Debug\Interface.UI.csproj.CoreCompileInputs.cache
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\obj\Debug\Interface.UI.csproj.CopyComplete
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\obj\Debug\Interface.UI.exe
+D:\desenvolvimento\AppTesteGFT\AppTeste\Interface.UI\obj\Debug\Interface.UI.pdb
