@@ -43,7 +43,7 @@ namespace Api.TratamentoDados.Business
                         .Select(cl => new AgrupamentoModel
                         {
                             descricao = cl.First().conta.ToString(),
-                            precomedio = cl.Sum(c => c.quantidade) == 0 ? 0 : cl.Sum(c => c.quantidade * c.preco) / cl.Sum(c => c.quantidade),
+                            precomedio = cl.Sum(c => c.quantidade) == 0 ? 0 : Math.Round((cl.Sum(c => c.quantidade * c.preco) / cl.Sum(c => c.quantidade)),2),
                             quantidade = cl.Sum(c => c.quantidade)
                         }).ToList();
                         break;
@@ -52,7 +52,7 @@ namespace Api.TratamentoDados.Business
                        .Select(cl => new AgrupamentoModel
                        {
                            descricao = cl.First().ativo.ToString(),
-                           precomedio = cl.Sum(c => c.quantidade) == 0 ? 0 : cl.Sum(c => c.quantidade * c.preco) / cl.Sum(c => c.quantidade),
+                           precomedio = cl.Sum(c => c.quantidade) == 0 ? 0 : Math.Round((cl.Sum(c => c.quantidade * c.preco) / cl.Sum(c => c.quantidade)),2),
                            quantidade = cl.Sum(c => c.quantidade)
                        }).ToList();
                         break;
@@ -60,8 +60,8 @@ namespace Api.TratamentoDados.Business
                         result = listFull.GroupBy(l => l.tipoOperacao)
                        .Select(cl => new AgrupamentoModel
                        {
-                           descricao = cl.First().conta.ToString(),
-                           precomedio = cl.Sum(c => c.quantidade) == 0 ? 0 : cl.Sum(c => c.quantidade * c.preco) / cl.Sum(c => c.quantidade),
+                           descricao = cl.First().tipoOperacao.ToString(),
+                           precomedio = cl.Sum(c => c.quantidade) == 0 ? 0 : Math.Round((cl.Sum(c => c.quantidade * c.preco) / cl.Sum(c => c.quantidade)), 2),
                            quantidade = cl.Sum(c => c.quantidade)
                        }).ToList();
                         break;
